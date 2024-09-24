@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Project</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <script src="script.js"></script> -->
+    <style>
+        *{
+    margin: none;
+    padding: none;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: centre;
+    align-content: center;
+    background-color: rgba(212, 208, 204, 0.708);
+}
+
+.tag{
+    font-size: 0.9rem;
+    background-color: rgb(250, 166, 64);
+    border-radius: 1.9rem;
+    width: 8.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    color: beige;
+    margin-top: 2rem;
+}
+
+.tag2{
+    font-size: 0.9rem;
+    background-color: rgb(167, 84, 188);
+    border-radius: 1.9rem;
+    width: 8.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    color: beige;
+    margin-top: 2rem;
+}
+
+.p-title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+h3{
+    padding-top: 0.4rem;
+}
+
+.card{
+    /* background: #fff; */
+    display: grid;
+    /* grid-template-rows:55% auto ; */
+    height: 90%;
+    width: 30%;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    box-shadow: 5px 80px 35px 5px #3c3c3c;
+}
+.card2{
+    /* background: #fff; */
+    display: grid;
+    /* grid-template-rows:55% auto ; */
+    height: 90%;
+    width: 30%;
+    margin-top: 2rem;
+    box-shadow: 5px 80px 35px 5px #3c3c3c;
+    margin-left: 15rem;
+}
+.p-image{
+    background-image: url("images/basic-dress-yellow.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 10px;
+    width: 28rem;
+    height: 480%;
+}
+
+.p-image2{
+    background-image: url("images/top-purple.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 10px;
+    width: 28rem;
+    height: 400%;
+}
+
+.p-description{
+    background-color: rgb(203, 197, 189);
+    color:rgb(41, 41, 28) ;
+    padding-left: 20px;
+    margin-top: 200px;
+    /* width: 28rem; */
+}
+
+.colours-price{
+    display: flex;
+    width: 6rem;
+    justify-content: centre;
+    width: 70%;
+    justify-content: space-between;
+    margin-top: -15px;
+}
+
+.colours{
+    display: flex;
+    width: 6rem;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.yellow{
+    background: rgb(250, 166, 64);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.blue{
+    background: rgb(59, 49, 203);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.purple{
+    background: rgb(167, 84, 188);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.navy-blue{
+    background: rgb(37, 28, 164);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.black{
+    background:black;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.pricing{
+    display: flex;
+    width: 12rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.old-price{
+    font-weight: 100;
+}
+
+button{
+    cursor: pointer;
+}
+
+#button{
+    background-color:rgb(250, 166, 64);
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+#button2{
+    background-color:rgb(167, 84, 188);
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+button white-button{
+    background-color: #fff;
+}
+
+.button-text{
+    color: beige;
+    margin-left: 5px;
+}
+
+.feedback{
+    display: none;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="p-image">
+            <!-- <img src="images/basic-dress-yellow.jpeg" alt="dress"> -->
+        </div>
+        <div class="p-description">
+            <!-- <br> -->
+            <h3 class="tag">Women's Clothing</h3>
+            <h1 class="p-title" >Classy Dress</h1> 
+            <p class="p-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, esse aspernatur. Qui veritatis debitis nesciunt expedita sunt hic, quas reiciendis culpa, quis eveniet explicabo ea! Architecto accusantium maiores assumenda ipsam!</p>
+           <p>Pick a colour</p>
+           <div class="colurs-price">
+            <div class="colours">
+                <span class="yellow"></span>
+                <span class="blue"></span>
+            </div>
+            <div class="pricing">
+              <h2 class="new-price">ksh 3,500</h2>
+              <h3 class="old-price"><s>ksh 4,000</s></h3>
+            </div>
+           </div>
+           <button id="button">
+             <span>
+                <i class="fa-solid fa-cart-shopping"></i>
+             </span>
+             <span class="button-text">Add to Cart</span>
+           </button>
+           <button class="feedback">
+            <span id="white button">
+                Hurray! You're about to own a dress
+            </span>
+           </button>
+        </div>
+    </div>
+
+    <div class="card2">
+        <div class="p-image2">
+            <!-- <img src="images/basic-dress-yellow.jpeg" alt="dress"> -->
+        </div>
+        <div class="p-description">
+            <!-- <br> -->
+            <h3 class="tag2">Women's Clothing</h3>
+            <h1 class="p-title" >Stylish Top</h1> 
+            <p class="p-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, esse aspernatur. Qui veritatis debitis nesciunt expedita sunt hic, quas reiciendis culpa, quis eveniet explicabo ea! Architecto accusantium maiores assumenda ipsam!</p>
+           <p>Pick a colour</p>
+           <div class="colurs-price">
+            <div class="colours">
+                <span class="purple"></span>
+                <span class="navy-blue"></span>
+                <span class="black"></span>
+
+            </div>
+            <div class="pricing">
+              <h2 class="new-price">ksh 1,500</h2>
+              <h3 class="old-price"><s>ksh 2,000</s></h3>
+            </div>
+           </div>
+           <button id="button2">
+             <span>
+                <i class="fa-solid fa-cart-shopping"></i>
+             </span>
+             <span class="button-text">Add to Cart</span>
+           </button>
+           <button class="feedback">
+            <span id="white button">
+                Hurray! You're about to own a dress
+            </span>
+           </button>
+        </div>
+    </div>
+   
+<script>
+      // Accessing elements for the first card (Dress)
+const blueColour = document.querySelector(".blue");
+const yellowColour = document.querySelector(".yellow");
+const imageCard = document.querySelector(".p-image");
+const cartButton = document.getElementById("button");
+const feedbackBtn = document.querySelector(".feedback");
+const itemTag = document.querySelector(".tag");
+
+// Manipulating for the first card (Dress)
+blueColour.addEventListener("click", function () {
+  cartButton.style.backgroundColor = "rgb(59, 49, 203)";
+  itemTag.style.backgroundColor = "rgb(59, 49, 203)";
+  imageCard.style.backgroundImage = 'url("images/basic-dress-blue.jpeg")';
+});
+
+yellowColour.addEventListener("click", function () {
+  cartButton.style.backgroundColor = "rgb(250, 166, 64)";
+  itemTag.style.backgroundColor = "rgb(250, 166, 64)";
+  imageCard.style.backgroundImage = 'url("images/basic-dress-yellow.jpeg")';
+});
+
+const cart = () => {
+  cartButton.style.display = "none";
+  feedbackBtn.style.display = "block";
+};
+cartButton.addEventListener("click", cart);
+
+const feedback = () => {
+  cartButton.style.display = "block";
+  feedbackBtn.style.display = "none";
+};
+feedbackBtn.addEventListener("click", feedback);
+
+// Accessing elements for the second card (Top)
+const purpleColour = document.querySelector(".purple");
+const blackColour = document.querySelector(".black");
+const navyColour = document.querySelector(".navy-blue");
+const imageCard2 = document.querySelector(".p-image2");
+const cartButton2 = document.getElementById("button2");
+const itemTag2 = document.querySelector(".tag2");
+
+// Manipulating for the second card (Top)
+purpleColour.addEventListener("click", function () {
+  cartButton2.style.backgroundColor = "rgb(167, 84, 188)";
+  itemTag2.style.backgroundColor = "rgb(167, 84, 188)";
+  imageCard2.style.backgroundImage = 'url("images/top-purple.jpg")';
+});
+
+blackColour.addEventListener("click", function () {
+  cartButton2.style.backgroundColor = "black";
+  itemTag2.style.backgroundColor = "black";
+  imageCard2.style.backgroundImage = 'url("images/top-purple.jpg")';
+});
+
+navyColour.addEventListener("click", function () {
+  cartButton2.style.backgroundColor = "rgb(37, 28, 164)";
+  itemTag2.style.backgroundColor = "rgb(37, 28, 164)";
+  imageCard2.style.backgroundImage = 'url("images/top-purple.jpg")';
+});
+
+    </script> 
+</body>
+</html>
