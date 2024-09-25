@@ -200,6 +200,13 @@ button white-button{
     border: none;
     border-radius: 5px;
 }
+
+.feedback2{
+    display: none;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+}
     </style>
 </head>
 <body>
@@ -211,7 +218,25 @@ button white-button{
             <!-- <br> -->
             <h3 class="tag">Women's Clothing</h3>
             <h1 class="p-title" >Classy Dress</h1> 
-            <p class="p-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, esse aspernatur. Qui veritatis debitis nesciunt expedita sunt hic, quas reiciendis culpa, quis eveniet explicabo ea! Architecto accusantium maiores assumenda ipsam!</p>
+            <p class="p-details"><h2>Women's Casual Wrap Ruched Dress, Fitted With Sleeves Classy Dress</h2>
+                <table cellspacing="3" cellpadding="5">
+                    <h3>Product Details</h3>
+                   <tbody>
+                    <tr>
+                        <td><strong>Closure Type</strong></td>
+                        <td>Tie</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Neck style</strong></td>
+                        <td>V-Neck</td>
+                    </tr>
+                    <tr>
+                        <td><strong> Sleeve type</strong></td>
+                        <td>Sleeve</td>
+                    </tr>
+                   </tbody>         
+                </table>
+            </p>
            <p>Pick a colour</p>
            <div class="colurs-price">
             <div class="colours">
@@ -265,9 +290,9 @@ button white-button{
              </span>
              <span class="button-text">Add to Cart</span>
            </button>
-           <button class="feedback">
-            <span id="white button">
-                Hurray! You're about to own a dress
+           <button class="feedback2">
+            <span id="white button2">
+                Hurray! You're about to own a top
             </span>
            </button>
         </div>
@@ -314,6 +339,8 @@ const navyColour = document.querySelector(".navy-blue");
 const imageCard2 = document.querySelector(".p-image2");
 const cartButton2 = document.getElementById("button2");
 const itemTag2 = document.querySelector(".tag2");
+const feedbackBtn2 = document.querySelector(".feedback2");
+
 
 // Manipulating for the second card (Top)
 purpleColour.addEventListener("click", function () {
@@ -325,14 +352,27 @@ purpleColour.addEventListener("click", function () {
 blackColour.addEventListener("click", function () {
   cartButton2.style.backgroundColor = "black";
   itemTag2.style.backgroundColor = "black";
-  imageCard2.style.backgroundImage = 'url("images/top-purple.jpg")';
+  imageCard2.style.backgroundImage = 'url("images/top-black.jpg")';
 });
 
 navyColour.addEventListener("click", function () {
   cartButton2.style.backgroundColor = "rgb(37, 28, 164)";
   itemTag2.style.backgroundColor = "rgb(37, 28, 164)";
-  imageCard2.style.backgroundImage = 'url("images/top-purple.jpg")';
+  imageCard2.style.backgroundImage = 'url("images/top-blue.jpg")';
 });
+
+const cart2 = () => {
+  cartButton2.style.display = "none";
+  feedbackBtn2.style.display = "block";
+};
+cartButton2.addEventListener("click", cart2);
+
+const feedback2 = () => {
+  cartButton2.style.display = "block";
+  feedbackBtn2.style.display = "none";
+};
+feedbackBtn2.addEventListener("click", feedback2);
+
 
     </script> 
 </body>
